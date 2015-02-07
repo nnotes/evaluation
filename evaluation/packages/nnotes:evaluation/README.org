@@ -1,0 +1,37 @@
+# STORY-TEMPLATE-VERSION: 4.2.0
+
+* Evaluation
+  - Learners _expect_ to practise on a note _so that_ they find out
+    what do they know or don't know 
+
+** Context
+   - Version: 1.0.0
+   - Contribution policy: [[http://rfc.zeromq.org/spec:22][C4.1]]
+   - Project style guide: [[https://github.com/nomosyn/js-coding-style][Coding style]]
+   - short name: evaluation 
+   - abbreviation: evaluation 
+   - Licensed under <license name>, see LICENCE
+   - Contributors:
+       - Full name: Bastien Faure, contact: contact@bastienfaure.fr 
+
+*** Definitions
+
+** Init State
+   - Learners pratise on a note by selecting an idea and doing corresponding 
+     exercises.
+
+** Problem
+   - Learners have to manually select ideas and practise on these ideas.
+   - They can't practise on whole note.
+   
+** End State
+   - Learners can practise on a whole note by doing all exercises related to 
+     this note:
+     - a learner select a note to work on
+     - he then goes on "evaluation" page where he can find a list of all
+       exercises from that note
+     - after answering exercises, a report is showed and learners have a global 
+       view on what they know and don't know
+
+*** Rationale
+    - Only solution found so far 
