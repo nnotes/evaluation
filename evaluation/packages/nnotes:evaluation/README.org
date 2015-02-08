@@ -1,0 +1,43 @@
+# STORY-TEMPLATE-VERSION: 4.3.0
+
+* Evaluation
+  - Learners _expect_ to practise on a note _so that_ they find out
+    what do they know or don't know 
+
+** Context
+   - Version: 1.0.0
+   - Contribution policy: [[http://rfc.zeromq.org/spec:22][C4.1]]
+   - Project style guide: [[https://github.com/nomosyn/resources][Coding style]]
+   - short name: evaluation 
+   - abbreviation: evaluation 
+   - Licensed under MPLv2, see LICENCE
+   - Contributors:
+       - Full name: Bastien Faure, contact: contact@bastienfaure.fr
+
+
+*** Definitions
+
+** Init State
+   - Learners pratice on a note by selecting an idea and doing corresponding 
+     exercises.
+
+** Problem
+   - Learners can't easily practise on whole note.
+     - They have to manually select ideas and practise on these ideas.
+   - Learners don't have a global performance report.
+   
+** End State
+   - Given a note, a learner can:
+     - access an ordered list of all exercises
+     - try to complete these exercises
+     - get a report that shows:
+       - what he knows : areas where the learner is good at
+       - what he doesn't know : areas that still need to be improved
+
+   note 
+   -> ordered list of exercises
+   -> data := [(note section, # of exercises completed, # of section exercises)]
+   -> report
+
+*** Rationale
+    - Only solution found so far 
