@@ -1,4 +1,4 @@
-# STORY-TEMPLATE-VERSION: 4.2.0
+# STORY-TEMPLATE-VERSION: 4.3.0
 
 * Evaluation
   - Learners _expect_ to practise on a note _so that_ they find out
@@ -7,31 +7,37 @@
 ** Context
    - Version: 1.0.0
    - Contribution policy: [[http://rfc.zeromq.org/spec:22][C4.1]]
-   - Project style guide: [[https://github.com/nomosyn/js-coding-style][Coding style]]
+   - Project style guide: [[https://github.com/nomosyn/resources][Coding style]]
    - short name: evaluation 
    - abbreviation: evaluation 
-   - Licensed under <license name>, see LICENCE
+   - Licensed under MPLv2, see LICENCE
    - Contributors:
-       - Full name: Bastien Faure, contact: contact@bastienfaure.fr 
+       - Full name: Bastien Faure, contact: contact@bastienfaure.fr
+
 
 *** Definitions
 
 ** Init State
-   - Learners pratise on a note by selecting an idea and doing corresponding 
+   - Learners pratice on a note by selecting an idea and doing corresponding 
      exercises.
 
 ** Problem
-   - Learners have to manually select ideas and practise on these ideas.
-   - They can't practise on whole note.
+   - Learners can't easily practise on whole note.
+     - They have to manually select ideas and practise on these ideas.
+   - Learners don't have a global performance report.
    
 ** End State
-   - Learners can practise on a whole note by doing all exercises related to 
-     this note:
-     - a learner select a note to work on
-     - he then goes on "evaluation" page where he can find a list of all
-       exercises from that note
-     - after answering exercises, a report is showed and learners have a global 
-       view on what they know and don't know
+   - Given a note, a learner can:
+     - access an ordered list of all exercises
+     - try to complete these exercises
+     - get a report that shows:
+       - what he knows : areas where the learner is good at
+       - what he doesn't know : areas that still need to be improved
+
+   note 
+   -> ordered list of exercises
+   -> data := [(note section, # of exercises completed, # of section exercises)]
+   -> report
 
 *** Rationale
     - Only solution found so far 
