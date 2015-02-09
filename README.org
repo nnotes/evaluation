@@ -67,7 +67,7 @@
 
 *** Rationale
 
-    - not solution simpler than : `user does exercises sequence from note ->
+    - No solution found simpler than : `user does exercises sequence from note ->
       report` found.
         - exs := note -> ordered list of exercises
         - data := user exs -> [(note section, # of exercises completed, # of section exercises)]
