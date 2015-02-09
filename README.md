@@ -1,3 +1,0 @@
-# evaluation
-
-Projet de démonstration

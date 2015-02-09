@@ -1,0 +1,74 @@
+# STORY-TEMPLATE-VERSION: 4.3.0
+
+* Evaluation
+
+  - Learners _expect_ to test their mastery of a knowledge _so that_ they
+    improve and evaluate their mastery of that knowledge.
+
+
+
+** Context
+
+   - Version: 0.0.0
+
+   - Contribution policy: [[http://rfc.zeromq.org/spec:22][C4.1]]
+
+   - Project style guide: [[https://github.com/nomosyn/resources][Coding style]]
+
+   - short name: evaluation
+
+   - abbreviation: evaluation
+
+   - License: This Source Code Form is subject to the terms of the Mozilla
+     Public License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+   - Contributors:
+       - Full name: Bastien Faure, contact: contact@bastienfaure.fr
+
+       - Full name: Pierre-Henry Fröhring, contact: frohring.pierrehenry@gmail.com
+
+
+
+** Init State
+
+   - Learners test their mastery of a knowledge by solving exercises attached to
+     each note sections.
+
+   - If a section happens to not have exercises attached to it then it falls
+     back to a 'content' view: learner have to check other sections for
+     exercises manually.
+
+
+
+** Problem
+
+   - P1: Given learners feed-backs on exercises (succeeded, not succeeded, ...), no
+     report is answered to the learner giving him insights on its mastery
+     performance => learner expectation not met.
+
+   - P2: Manually checking for exercises is tedious when learners really want a
+     sequence of uninterrupted exercises on the given note => get in the way of
+     learner intention.
+
+
+
+** End State
+
+   - Given a note, a learner can:
+     - S2: access an ordered list of all exercises...
+
+     - try to complete these exercises...
+
+     - S1: when no more exercises remain or user decides to, he get a report that
+       shows how much he mastered sections of the note.
+
+
+
+*** Rationale
+
+    - No solution found simpler than : `user does exercises sequence from note ->
+      report` found.
+        - exs := note -> ordered list of exercises
+        - data := user exs -> [(note section, # of exercises completed, # of section exercises)]
+        - data -> report
