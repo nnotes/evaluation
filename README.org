@@ -1,9 +1,10 @@
 # STORY-TEMPLATE-VERSION: 4.3.0
 
-* Evaluation
+* Self evaluation on note
 
   - Learners _expect_ to test their mastery of a knowledge _so that_ they
-    improve and evaluate their mastery of that knowledge.
+    improve/evaluate their mastery of that knowledge and make informed decision
+    when it comes to choose what to study next.
 
 
 
@@ -67,8 +68,9 @@
 
 *** Rationale
 
-    - No solution found simpler than : `user does exercises sequence from note ->
-      report` found.
+    - No solution found simpler than : `user does exercises sequence from note -> report`.
         - exs := note -> ordered list of exercises
+
         - data := user exs -> [(note section, # of exercises completed, # of section exercises)]
+
         - data -> report
